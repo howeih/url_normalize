@@ -1,13 +1,13 @@
 [package]
 name = "url_normalizer"
 version = "0.1.0"
-authors = ["Howard Huang <howeih@gmail.com>"]
+authors = ["howei <howeih@gmail.com>"]
 edition = "2018"
 description = "normalize url"
 keywords = ["canonicalize", "normalize", "url"]
 repository = "https://github.com/howeih/url_normalizer"
 license = "GPL-2.0"
-
+documentation = "https://docs.rs/url_normalizer"
 
 [dependencies]
 url = "2.1.1"

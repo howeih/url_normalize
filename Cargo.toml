@@ -1,5 +1,5 @@
 [package]
-name = "url_normalizer"
+name = "normalize_url"
 version = "0.1.0"
 authors = ["howei <howeih@gmail.com>"]
 edition = "2018"

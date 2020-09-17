@@ -21,5 +21,4 @@ fn main() {
     assert_eq!("https://example.com:8080/main.php?a=5&b=2&c=1", normalizer3.normalize(None).unwrap());
 }
 ```
-
-License: MIT
+ 

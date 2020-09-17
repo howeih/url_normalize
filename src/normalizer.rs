@@ -24,7 +24,6 @@ use std::collections::BTreeMap;
 
 use regex::Regex;
 use url::Url;
-use urlencoding::{decode, encode};
 
 use crate::error::NormalizeError;
 
@@ -46,7 +45,7 @@ impl UrlNormalizer {
         let mut normalized_path = Vec::<u8>::new();
         let urls = url.path().split("/").collect::<Vec<&str>>();
         for (i, u) in urls.iter().enumerate() {
-            normalized_path.extend_from_slice(encode(u).as_bytes());
+            normalized_path.extend_from_slice(u.as_bytes());
             if i < urls.len() - 1 {
                 normalized_path.push(b'/');
             }
@@ -121,13 +120,7 @@ impl UrlNormalizer {
             if pair.len() < 1 {
                 continue;
             }
-            let token = pair.splitn(2, "=")
-                .map(|t| {
-                    decode(t)
-                })
-                .take_while(|t| t.is_ok())
-                .map(|t| t.unwrap()).collect::<Vec<String>>();
-
+            let token = pair.splitn(2, "=").map(|s|s.to_owned()).collect();
             if let Some(token) = Self::split_token(pair, token) {
                 for regex in &remove_rules {
                     if regex.is_match(&token.0) {

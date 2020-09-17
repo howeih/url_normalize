@@ -162,9 +162,7 @@ impl UrlNormalizer {
         }
         let mut segs = Self::split(&mut path, ns)?;
         Self::remove_dots(&mut path, &mut segs);
-        println!("2-> segs::{:?} path:{:?}", segs, path);
         Self::maybe_add_leading_dot(&mut path, &mut segs);
-        println!("3-> segs::{:?} path:{:?}", segs, path);
         let p = Self::join(&mut path, &mut segs)?;
         let res: String = path.into_iter().take(p).collect();
         Ok(res)

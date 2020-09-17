@@ -7,7 +7,7 @@ description = "normalize url"
 keywords = ["canonicalize", "normalize", "url"]
 repository = "https://github.com/howeih/url_normalizer"
 license = "GPL-2.0"
-documentation = "https://docs.rs/url_normalizer"
+documentation = "https://docs.rs/normalize_url"
 
 [dependencies]
 url = "2.1.1"

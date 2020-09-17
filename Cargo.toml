@@ -1,0 +1,15 @@
+[package]
+name = "url_normalizer"
+version = "0.1.0"
+authors = ["Howard Huang <howeih@gmail.com>"]
+edition = "2018"
+description = "normalize url"
+keywords = ["canonicalize", "normalize", "url"]
+repositor = "https://github.com/howeih/url_normalize"
+license = "GPL-2.0"
+
+
+[dependencies]
+url = "2.1.1"
+urlencoding = "1.1.1"
+regex = "1.3.9"

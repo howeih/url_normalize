@@ -3,7 +3,7 @@
 //! <br/>
 //! Example usage:
 //! ```rust
-//! use url_normalizer::normalizer;
+//! use normalize_url::normalizer;
 //!
 //! fn main() {
 //!     let tainted_url1 = "https://example.com/main.php?c=1&b=2&a=5";

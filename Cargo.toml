@@ -5,7 +5,7 @@ authors = ["Howard Huang <howeih@gmail.com>"]
 edition = "2018"
 description = "normalize url"
 keywords = ["canonicalize", "normalize", "url"]
-repositor = "https://github.com/howeih/url_normalize"
+repository = "https://github.com/howeih/url_normalizer"
 license = "GPL-2.0"
 
 

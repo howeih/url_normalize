@@ -215,7 +215,7 @@ impl UrlNormalizer {
 
 
     fn split(path: &mut Vec<char>, seg_size: isize) -> Result<Vec<isize>, NormalizeError> {
-        let mut segs: Vec<isize> = vec![0; seg_size as usize];//Vec::with_capacity(seg_size as usize);
+        let mut segs: Vec<isize> = vec![0; seg_size as usize];
         let end = path.len() as isize - 1;
         let mut p = 0;
         let mut i = 0;
